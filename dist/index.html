@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Probability — Rangkuman Materi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="hero" id="home">
+    <h1>probability</h1>
+    <p>a comprehensive explanation of peluang.</p>
+  </header>
+
+  <main class="page">
+
+    <section class="board-section">
+      <h2 class="section-heading" id="choose-title">
+        choose the board
+      </h2>
+
+      <nav class="board-grid" aria-label="Daftar materi">
+        <a class="board" href="#dasar">Dasar</a>
+        <a class="board" href="#peluang">Probabilitias</a>
+        <a class="board" href="#komplemen">Komplemen</a>
+        <a class="board" href="#bebas">compound:<br>independent</a>
+        <a class="board" href="#bersyarat">conditional<br>probability</a>
+        <a class="board" href="#lepas">compound:<br>mutually exclusive</a>
+        <a class="board" href="#tidak-lepas">compound:<br>with intersection</a>
+      </nav>
+    </section>
+
+    <section class="materials">
+
+<!--dasarPeluang--> 
+      <article class="material" id="dasar">
+        <h2>1. Dasar-dasar Peluang</h2>
+
+        <div class="material-grid">
+          <div>
+            <p><strong>Percobaan</strong> adalah tindakan atau kegiatan yang dapat diulang dalam keadaan yang sama untuk memperoleh hasil tertentu.</p>
+
+            <p><strong>Ruang sampel (S)</strong> adalah himpunan semua hasil yang mungkin dari suatu percobaan. <strong>Titik sampel</strong> adalah anggota ruang sampel, sedangkan <strong>kejadian</strong> adalah himpunan bagian dari ruang sampel.</p>
+
+            <p><strong>Kejadian sederhana</strong> memiliki satu titik sampel. <strong>Kejadian majemuk</strong> memiliki lebih dari satu titik sampel.</p>
+
+            <h3>Rumus</h3>
+            <p>Bagian ini berisi istilah dasar; belum ada rumus khusus.</p>
+          </div>
+
+          <div class="visual-side">
+            <div class="visual-card">
+              <div>
+                <div class="big-symbol">S = {1, 2, 3, 4, 5, 6}</div>
+                <p>Ruang sampel pada pelemparan satu dadu</p>
+              </div>
+            </div>
+
+            <div class="example">
+              <h3>Contoh</h3>
+              <p>Kejadian muncul angka 1 adalah kejadian sederhana, yaitu {1}. Kejadian muncul angka genap adalah kejadian majemuk, yaitu {2, 4, 6}.</p>
+            </div>
+          </div>
+        </div>
+
+        <a class="back-top" href="#home">↑ back to top</a>
+      </article>
+
+<!--Peluangkejadian-->
+      <article class="material" id="peluang">
+        <h2>2. Peluang Suatu Kejadian</h2>
+
+        <div class="material-grid">
+          <div>
+            <p>Peluang kejadian menyatakan besar kemungkinan suatu kejadian terjadi. Jika semua hasil dalam ruang sampel memiliki peluang yang sama, maka:</p>
+
+            <h3>Formula</h3>
+            <div class="formula">P(A) = n(A) / n(S)</div>
+
+            <p><strong>n(A)</strong> adalah banyak anggota kejadian A, sedangkan <strong>n(S)</strong> adalah banyak anggota ruang sampel.</p>
+          </div>
+
+          <div class="visual-side">
+            <div class="visual-card">
+              <div>
+                <div class="big-symbol">1 / 6</div>
+                <p>Peluang muncul angka 1 pada sebuah dadu</p>
+              </div>
+            </div>
+
+            <div class="example">
+              <h3>Solution</h3>
+              <p>S = {1, 2, 3, 4, 5, 6}, sehingga n(S) = 6.</p>
+              <p>A = {1}, sehingga n(A) = 1.</p>
+              <p><strong>P(A) = 1/6</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <a class="back-top" href="#home">↑ back to top</a>
+      </article>
+
+      <!-- 3. PELUANG KOMPLEMEN -->
+      <article class="material" id="komplemen">
+        <h2>3. Peluang Komplemen</h2>
+
+        <div class="material-grid">
+          <div>
+            <p>Komplemen kejadian A, ditulis <strong>Aᶜ</strong>, adalah kejadian bahwa A tidak terjadi.</p>
+
+            <h3>Formula</h3>
+            <div class="formula">P(Aᶜ) = 1 − P(A)</div>
+          </div>
+
+          <div class="visual-side">
+            <div class="visual-card">
+              <div>
+                <div class="big-symbol">A + Aᶜ = S</div>
+                <p>Kejadian A dan komplemennya mencakup seluruh ruang sampel</p>
+              </div>
+            </div>
+
+            <div class="example">
+              <h3>Contoh &amp; Solution</h3>
+              <p>Pada pelemparan dadu, A adalah kejadian muncul bilangan ganjil {1, 3, 5}. Komplemennya adalah bilangan genap {2, 4, 6}.</p>
+              <p>P(Aᶜ) = 3/6 = <strong>1/2</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <a class="back-top" href="#home">↑ back to top</a>
+      </article>
+
+      <!-- 4. KEJADIAN SALING BEBAS -->
+      <article class="material" id="bebas">
+        <h2>4. Kejadian Saling Bebas (Stokastik)</h2>
+
+        <div class="material-grid">
+          <div>
+            <p>Dua kejadian saling bebas jika terjadinya satu kejadian tidak memengaruhi peluang kejadian yang lain.</p>
+
+            <h3>Formula</h3>
+            <div class="formula">P(A ∩ B) = P(A) × P(B)</div>
+          </div>
+
+          <div class="visual-side">
+            <div class="visual-card">
+              <div>
+                <div class="big-symbol">A × B</div>
+                <p>Peluang kedua kejadian terjadi bersama</p>
+              </div>
+            </div>
+
+            <div class="example">
+              <h3>Contoh &amp; Solution</h3>
+              <p>Peluang lulus Matematika = 0,8 dan peluang lulus Bahasa Inggris = 0,7. Hasil kedua ujian tidak saling memengaruhi.</p>
+              <p>P(A ∩ B) = 0,8 × 0,7 = <strong>0,56</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <a class="back-top" href="#home">↑ back to top</a>
+      </article>
+
+      <!-- 5. PELUANG BERSYARAT -->
+      <article class="material" id="bersyarat">
+        <h2>5. Peluang Bersyarat</h2>
+
+        <div class="material-grid">
+          <div>
+            <p>Peluang bersyarat menghitung peluang B terjadi dengan syarat A telah terjadi. Rumus berlaku untuk P(A) &gt; 0.</p>
+
+            <h3>Formula</h3>
+            <div class="formula">P(B | A) = P(A ∩ B) / P(A)</div>
+          </div>
+
+          <div class="visual-side">
+            <div class="visual-card">
+              <div>
+                <div class="big-symbol">P(B | A)</div>
+                <p>Peluang B dengan syarat A telah terjadi</p>
+              </div>
+            </div>
+
+            <div class="example">
+              <h3>Contoh &amp; Solution</h3>
+              <p>Peluang pasien menderita diabetes = 0,10. Peluang pasien menderita diabetes sekaligus hipertensi = 0,06.</p>
+              <p>P(B | A) = 0,06 / 0,10 = <strong>0,6</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <a class="back-top" href="#home">↑ back to top</a>
+      </article>
+
+      <!-- 6. KEJADIAN SALING LEPAS -->
+      <article class="material" id="lepas">
+        <h2>6. Kejadian Saling Lepas</h2>
+
+        <div class="material-grid">
+          <div>
+            <p>Dua kejadian saling lepas jika keduanya tidak dapat terjadi pada saat yang sama. Keduanya tidak memiliki titik sampel yang sama.</p>
+
+            <h3>Formula</h3>
+            <div class="formula">A ∩ B = ∅</div>
+            <div class="formula">P(A ∪ B) = P(A) + P(B)</div>
+          </div>
+
+          <div class="visual-side">
+            <div class="visual-card">
+              <div>
+                <div class="big-symbol">A &nbsp;&nbsp; B</div>
+                <p>Dua kejadian terpisah dan tidak beririsan</p>
+              </div>
+            </div>
+
+            <div class="example">
+              <h3>Contoh &amp; Solution</h3>
+              <p>Pada pelemparan satu dadu, A = {1} dan B = {2}. Kedua kejadian tidak dapat muncul bersamaan.</p>
+              <p>P(A ∪ B) = 1/6 + 1/6 = <strong>1/3</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <a class="back-top" href="#home">↑ back to top</a>
+      </article>
+
+      <!-- 7. KEJADIAN TIDAK SALING LEPAS -->
+      <article class="material" id="tidak-lepas">
+        <h2>7. Kejadian Tidak Saling Lepas</h2>
+
+        <div class="material-grid">
+          <div>
+            <p>Dua kejadian tidak saling lepas jika keduanya dapat terjadi pada saat yang sama. Keduanya memiliki titik sampel yang sama.</p>
+
+            <h3>Formula</h3>
+            <div class="formula">A ∩ B ≠ ∅</div>
+            <div class="formula">P(A ∪ B) = P(A) + P(B) − P(A ∩ B)</div>
+
+            <p>Irisan P(A ∩ B) dikurangkan agar bagian yang terhitung dua kali hanya dihitung satu kali.</p>
+          </div>
+
+          <div class="visual-side">
+            <div class="visual-card">
+              <div>
+                <div class="big-symbol">A ∩ B</div>
+                <p>Dua kejadian memiliki bagian yang beririsan</p>
+              </div>
+            </div>
+
+            <div class="example">
+              <h3>Contoh &amp; Solution</h3>
+              <p>A = {2, 4, 6} (angka genap) dan B = {4, 5, 6} (angka lebih dari 3). Irisannya A ∩ B = {4, 6}.</p>
+              <p>P(A ∪ B) = 3/6 + 3/6 − 2/6 = <strong>2/3</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <a class="back-top" href="#home">↑ back to top</a>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="page">
+      Rangkuman Materi Peluang · HTML &amp; CSS only
+    </div>
+  </footer>
+
+</body>
+</html>

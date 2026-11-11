@@ -1,0 +1,285 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap');
+
+:root {
+  --ink: #171717;
+  --muted: #666;
+  --paper: #fff;
+  --board: #dedede;
+  --line: #e8e8e8;
+  --accent: #29215f;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 32px;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "DM Sans", Arial, sans-serif;
+  line-height: 1.65;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page {
+  width: min(1100px, 88%);
+  margin: 0 auto;
+}
+
+/*Hero --> Judul*/
+
+.hero {
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 75px 20px 55px;
+}
+
+.hero h1 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(3.4rem, 9vw, 6.2rem);
+  line-height: 1.05;
+  letter-spacing: -3px;
+  font-weight: 800;
+}
+
+.hero p {
+  margin-top: 12px;
+  color: #333;
+  font-size: clamp(.85rem, 2vw, 1.05rem);
+  letter-spacing: .2px;
+}
+
+/*Bagian board*/
+
+.board-section {
+  padding: 34px 0 95px;
+}
+
+.section-heading {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.board-grid {
+  width: min(850px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px 24px;
+}
+
+.board {
+  min-height: 88px;
+  padding: 18px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: var(--board);
+  border-radius: 13px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.12rem;
+  font-weight: 700;
+  line-height: 1.25;
+  transition: background .2s ease, transform .2s ease;
+}
+
+.board:hover {
+  background: #c9c9c9;
+  transform: translateY(-3px);
+}
+
+.board:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+
+/*Bagian Materi*/
+
+.materials {
+  padding-bottom: 90px;
+}
+
+.material {
+  padding: 58px 0 72px;
+  border-top: 1px solid var(--line);
+  scroll-margin-top: 28px;
+}
+
+.material h2 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.7rem, 4vw, 2.15rem);
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.material-grid {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 55px;
+  align-items: start;
+}
+
+.material p {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.material h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.35rem;
+  margin: 27px 0 12px;
+}
+
+.formula {
+  margin: 12px 0 18px;
+  padding: 18px 22px;
+  background: #f5f5f5;
+  border-radius: 10px;
+  text-align: center;
+  font-family: Georgia, serif;
+  font-size: clamp(1.2rem, 3vw, 1.65rem);
+  font-style: italic;
+  overflow-wrap: anywhere;
+}
+
+.example {
+  padding: 20px 22px;
+  background: #fafafa;
+  border-left: 4px solid var(--accent);
+  border-radius: 0 10px 10px 0;
+}
+
+.example p:last-child {
+  margin-bottom: 0;
+}
+
+.visual-side {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.visual-card {
+  min-height: 190px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #fff;
+}
+
+.visual-card .big-symbol {
+  font-family: Georgia, serif;
+  font-size: 2.5rem;
+  color: var(--accent);
+}
+
+.solution h3 {
+  margin-top: 0;
+}
+
+.solution p {
+  margin-bottom: 8px;
+}
+
+/*ScrollBehav & down*/
+
+.back-top {
+  display: inline-block;
+  margin-top: 16px;
+  color: var(--accent);
+  font-size: .9rem;
+  font-weight: 700;
+}
+
+.back-top:hover {
+  text-decoration: underline;
+}
+
+/* Footer*/
+
+footer {
+  border-top: 1px solid var(--line);
+  padding: 25px 0 35px;
+  text-align: center;
+  color: var(--muted);
+  font-size: .85rem;
+}
+
+/*Media Analyze (HP, laptop, tablet, dll) pake pixel di max-width*/
+
+@media (max-width: 700px) {
+
+  .hero {
+    min-height: 280px;
+    padding-top: 55px;
+  }
+
+  .board-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .board {
+    min-height: 78px;
+    font-size: 1rem;
+  }
+
+  .material-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .material {
+    padding: 45px 0 55px;
+  }
+}
+
+@media (max-width: 390px) {
+
+  .page {
+    width: 91%;
+  }
+
+  .board-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .board {
+    padding: 14px 9px;
+    font-size: .93rem;
+  }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .board {
+    transition: none;
+  }
+}
