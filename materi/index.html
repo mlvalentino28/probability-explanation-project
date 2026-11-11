@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Probability — Probability Summary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="hero" id="home">
+    <h1>probability</h1>
+    <p>a comprehensive explanation of probability.</p>
+  </header>
+
+  <main class="page">
+
+    <section class="board-section">
+      <h2 class="section-heading" id="choose-title">
+        choose a topic
+      </h2>
+
+      <nav class="board-grid" aria-label="List of topics">
+        <a class="board" href="#dasar">Basics</a>
+        <a class="board" href="#peluang">Probability</a>
+        <a class="board" href="#komplemen">Complement</a>
+        <a class="board" href="#bebas">compound:<br>independent</a>
+        <a class="board" href="#bersyarat">conditional<br>probability</a>
+        <a class="board" href="#lepas">compound:<br>mutually exclusive</a>
+        <a class="board" href="#tidak-lepas">compound:<br>with overlap</a>
+      </nav>
+    </section>
+
+    <section class="materials">
+
+<!--dasarPeluang--> 
+      <article class="material" id="dasar">
+        <h2>1. Probability Basics</h2>
+
+        <div class="material-grid">
+          <div>
+            <p><strong>An experiment</strong> is an action or activity that can be repeated under the same conditions to obtain a particular outcome.</p>
+
+            <p><strong>The sample space (S)</strong> is the set of all possible outcomes of an experiment. A <strong>sample point</strong> is an element of the sample space, while an <strong>event</strong> is a subset of the sample space.</p>
+
+            <p>A <strong>simple event</strong> has one sample point. A <strong>compound event</strong> has more than one sample point.</p>
+
+            <h3>Formula</h3>
+            <p>This section covers basic terms; there is no specific formula yet.</p>
+          </div>
+
+          <div class="visual-side">
+            <div class="visual-card">
+              <div>
+                <div class="big-symbol">S = {1, 2, 3, 4, 5, 6}</div>
+                <p>The sample space for rolling one die</p>
+              </div>
+            </div>
+
+            <div class="example">
+              <h3>Example</h3>
+              <p>The event of rolling a 1 is a simple event, namely {1}. The event of rolling an even number is a compound event, namely {2, 4, 6}.</p>
+            </div>
+          </div>
+        </div>
+
+        <a class="back-top" href="#home">↑ back to top</a>
+      </article>
+
+<!--Peluangkejadian-->
+      <article class="material" id="peluang">
+        <h2>2. Probability of an Event</h2>
+
+        <div class="material-grid">
+          <div>
+            <p>The probability of an event describes how likely it is to occur. If all outcomes in the sample space are equally likely, then:</p>
+
+            <h3>Formula</h3>
+            <div class="formula">P(A) = n(A) / n(S)</div>
+
+            <p><strong>n(A)</strong> is the number of elements in event A, while <strong>n(S)</strong> is the number of elements in the sample space.</p>
+          </div>
+
+          <div class="visual-side">
+            <div class="visual-card">
+              <div>
+                <div class="big-symbol">1 / 6</div>
+                <p>The probability of rolling a 1 on a die</p>
+              </div>
+            </div>
+
+            <div class="example">
+              <h3>Solution</h3>
+              <p>S = {1, 2, 3, 4, 5, 6}, so n(S) = 6.</p>
+              <p>A = {1}, so n(A) = 1.</p>
+              <p><strong>P(A) = 1/6</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <a class="back-top" href="#home">↑ back to top</a>
+      </article>
+
+      <!-- 3. PELUANG KOMPLEMEN -->
+      <article class="material" id="komplemen">
+        <h2>3. Probability of a Complement</h2>
+
+        <div class="material-grid">
+          <div>
+            <p>Komplemen kejadian A, ditulis <strong>Aᶜ</strong>, adalah kejadian bahwa A tidak terjadi.</p>
+
+            <h3>Formula</h3>
+            <div class="formula">P(Aᶜ) = 1 − P(A)</div>
+          </div>
+
+          <div class="visual-side">
+            <div class="visual-card">
+              <div>
+                <div class="big-symbol">A + Aᶜ = S</div>
+                <p>Event A and its complement cover the entire sample space</p>
+              </div>
+            </div>
+
+            <div class="example">
+              <h3>Example &amp; Solution</h3>
+              <p>When rolling a die, A is the event of rolling an odd number, {1, 3, 5}. Its complement is the event of rolling an even number, {2, 4, 6}.</p>
+              <p>P(Aᶜ) = 3/6 = <strong>1/2</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <a class="back-top" href="#home">↑ back to top</a>
+      </article>
+
+      <!-- 4. KEJADIAN SALING BEBAS -->
+      <article class="material" id="bebas">
+        <h2>4. Independent Events</h2>
+
+        <div class="material-grid">
+          <div>
+            <p>Two events are independent if the occurrence of one does not affect the probability of the other.</p>
+
+            <h3>Formula</h3>
+            <div class="formula">P(A ∩ B) = P(A) × P(B)</div>
+          </div>
+
+          <div class="visual-side">
+            <div class="visual-card">
+              <div>
+                <div class="big-symbol">A × B</div>
+                <p>The probability that both events occur</p>
+              </div>
+            </div>
+
+            <div class="example">
+              <h3>Example &amp; Solution</h3>
+              <p>The probability of passing Mathematics is 0.8, and the probability of passing English is 0.7. The outcomes of the two exams do not affect each other.</p>
+              <p>P(A ∩ B) = 0,8 × 0,7 = <strong>0.56</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <a class="back-top" href="#home">↑ back to top</a>
+      </article>
+
+      <!-- 5. PELUANG BERSYARAT -->
+      <article class="material" id="bersyarat">
+        <h2>5. Conditional Probability</h2>
+
+        <div class="material-grid">
+          <div>
+            <p>Conditional probability calculates the probability that B occurs given that A has occurred. The formula applies when P(A) &gt; 0.</p>
+
+            <h3>Formula</h3>
+            <div class="formula">P(B | A) = P(A ∩ B) / P(A)</div>
+          </div>
+
+          <div class="visual-side">
+            <div class="visual-card">
+              <div>
+                <div class="big-symbol">P(B | A)</div>
+                <p>The probability of B given that A has occurred</p>
+              </div>
+            </div>
+
+            <div class="example">
+              <h3>Example &amp; Solution</h3>
+              <p>The probability that a patient has diabetes is 0.10. The probability that a patient has both diabetes and hypertension is 0.06.</p>
+              <p>P(B | A) = 0.06 / 0.10 = <strong>0.6</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <a class="back-top" href="#home">↑ back to top</a>
+      </article>
+
+      <!-- 6. KEJADIAN SALING LEPAS -->
+      <article class="material" id="lepas">
+        <h2>6. Mutually Exclusive Events</h2>
+
+        <div class="material-grid">
+          <div>
+            <p>Two events are mutually exclusive if they cannot occur at the same time. They have no sample points in common.</p>
+
+            <h3>Formula</h3>
+            <div class="formula">A ∩ B = ∅</div>
+            <div class="formula">P(A ∪ B) = P(A) + P(B)</div>
+          </div>
+
+          <div class="visual-side">
+            <div class="visual-card">
+              <div>
+                <div class="big-symbol">A &nbsp;&nbsp; B</div>
+                <p>Two separate events with no overlap</p>
+              </div>
+            </div>
+
+            <div class="example">
+              <h3>Example &amp; Solution</h3>
+              <p>When rolling one die, A = {1} and B = {2}. The two events cannot occur together.</p>
+              <p>P(A ∪ B) = 1/6 + 1/6 = <strong>1/3</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <a class="back-top" href="#home">↑ back to top</a>
+      </article>
+
+      <!-- 7. KEJADIAN TIDAK SALING LEPAS -->
+      <article class="material" id="tidak-lepas">
+        <h2>7. Non-Mutually Exclusive Events</h2>
+
+        <div class="material-grid">
+          <div>
+            <p>Two events are not mutually exclusive if they can occur at the same time. They share one or more sample points.</p>
+
+            <h3>Formula</h3>
+            <div class="formula">A ∩ B ≠ ∅</div>
+            <div class="formula">P(A ∪ B) = P(A) + P(B) − P(A ∩ B)</div>
+
+            <p>Irisan P(A ∩ B) dikurangkan agar bagian yang terhitung dua kali hanya dihitung satu kali.</p>
+          </div>
+
+          <div class="visual-side">
+            <div class="visual-card">
+              <div>
+                <div class="big-symbol">A ∩ B</div>
+                <p>The two events have an overlapping part</p>
+              </div>
+            </div>
+
+            <div class="example">
+              <h3>Example &amp; Solution</h3>
+              <p>A = {2, 4, 6} (angka genap) dan B = {4, 5, 6} (angka lebih dari 3). Irisannya A ∩ B = {4, 6}.</p>
+              <p>P(A ∪ B) = 3/6 + 3/6 − 2/6 = <strong>2/3</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <a class="back-top" href="#home">↑ back to top</a>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="page">
+      Probability Summary · HTML &amp; CSS only
+    </div>
+  </footer>
+
+</body>
+</html>
