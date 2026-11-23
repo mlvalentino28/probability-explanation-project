@@ -1,4 +1,4 @@
-
+﻿
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap');
 
 :root {
@@ -295,6 +295,7 @@ button {
     border: none;
     border-radius: 10px;
 
+    font-family: "DM Sans", Arial, sans-serif;
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
@@ -307,3 +308,4 @@ button:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
 }
+
