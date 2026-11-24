@@ -30,9 +30,9 @@ The project aims to:
 
 - HTML5
 - CSS3
-- Google Fonts
-
-No frameworks or build tools are required.
+- Wayground
+- Codepen
+- VSCode
 
 ## Getting Started
 
