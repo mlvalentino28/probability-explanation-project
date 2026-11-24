@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2026 Nicholas Nathan.N (https://codepen.io/editor/Nicholas-NathanN/pen/01a1c846-b7d7-7db5-98a3-1bab0e0d1654)
+Copyright (c) 2026 Nicholas Nathan.N et al (https://codepen.io/editor/Nicholas-NathanN/pen/01a1c846-b7d7-7db5-98a3-1bab0e0d1654)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
